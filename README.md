@@ -1,0 +1,3 @@
+Exercism solutions
+
+* Typescript
