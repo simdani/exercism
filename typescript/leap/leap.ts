@@ -1,13 +1,15 @@
 function isLeapYear(year:number): boolean {
+    let isLeap: boolean = true
+
     if (year % 4 !== 0) {
-        return false
+        isLeap = false
     } else if (year % 400 === 0) {
-        return true
+        isLeap = true
     } else if (year % 100 === 0) {
-        return false
-    } else {
-        return true
+        isLeap = false
     }
+
+    return isLeap
 }
 
 export default isLeapYear
